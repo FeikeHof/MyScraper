@@ -1,2 +1,2 @@
-# MyScraper
+# my_scraper
 Scrapy project

@@ -7,10 +7,10 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = "MyScraper"
+BOT_NAME = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36"
 
-SPIDER_MODULES = ["MyScraper.spiders"]
-NEWSPIDER_MODULE = "MyScraper.spiders"
+SPIDER_MODULES = ["my_scraper.spiders"]
+NEWSPIDER_MODULE = "my_scraper.spiders"
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
@@ -45,13 +45,13 @@ ROBOTSTXT_OBEY = True
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    "MyScraper.middlewares.MyscraperSpiderMiddleware": 543,
+#    "my_scraper.middlewares.MyScraperSpiderMiddleware": 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    "MyScraper.middlewares.MyscraperDownloaderMiddleware": 543,
+#    "my_scraper.middlewares.MyScraperDownloaderMiddleware": 543,
 #}
 
 # Enable or disable extensions
@@ -63,7 +63,7 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    "MyScraper.pipelines.MyscraperPipeline": 300,
+#    "my_scraper.pipelines.MyScraperPipeline": 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
