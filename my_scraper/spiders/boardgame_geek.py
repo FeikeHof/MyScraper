@@ -6,6 +6,6 @@ class BoardgameGeekSpider(scrapy.Spider):
     allowed_domains = ["boardgamegeek.com"]
     start_urls = ["https://boardgamegeek.com"]
 
-    def parse(self, response):
-        with open(response.request.url, 'w') as file:
-            print(response.content, file=file)
+    def parse(self, response: scrapy.http.response.Response, **kwargs):
+        with open('reponse.html', 'w') as file:
+            print(response.body.decode('utf-8'), file=file)
